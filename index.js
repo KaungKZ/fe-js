@@ -3,7 +3,7 @@
 function caesar(string, key) {
   let cipher;
 
-  if (key < 0 || !key) {
+  if (key < 0 || !key || isNaN(key)) {
     return string;
   }
 
